@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.bar {
+  height: auto;
+  width: 100%;
+  padding: 2px 5px;
+  background-color: rgba(0, 17, 76, 0.948);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.bar::after {
+  content: "";
+  height: 1.5px;
+  width: 0px;
+  /* background-color: rgb(46, 255, 185); */
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 3s;
+}
+.bar:hover::after {
+  width: 100%;
+}
+
+
+
+
+.ch {
+  height: 70px;
+  /* border: 1px solid black; */
+}
+
+.ch1 {
+  /* display: none; */
+  width: 100%;
+  padding: 2px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  height: auto;
+  width: 57px;
+  margin-top: 2.5px;
+  margin-right: 20px;
+  text-align: center;
+  /* background: linear-gradient(to right, rgb(255, 102, 0),rgb(255, 0, 0), rgb(123, 0, 255) ); */
+  border-radius: 50px;
+  /* border: 1px solid black; */
+  /* background-image: url('img5.png'); */
+  box-shadow: 0px 0px 20px 5px rgb(0, 255, 255);
+  background-color: rgb(255, 196, 196);
+}
+.name {
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.name p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7a28;
+  font-family: Poetsen One;
+}
+.name #p2 {
+  font-size: 1.1rem;
+  color: white;
+}
+@media (max-width: 600px) {
+  .icon {
+    margin-right: 10px;
+  }
+  .name p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff7a28;
+    font-family: Poetsen One;
+  }
+  .name #p2 {
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+
+
+
+
+.ch2 {
+  /* display: none; */
+  width: 180%;
+}
+.ch3 {
+  /* display: none; */
+  width: 250%;
+}
+.ch4 {
+  /* display: none; */
+  width: 40%;
+}
+
+
+
+
+
+.search{
+  height: ;
+  width: ;
+}
+.searchIcon{
+
+}
+.threedot{
+
+}
+
+
+.resp {
+  display: none;
+}
+@media (max-width: 600px) {
+  .resp {
+    display: block;
+  }
+  .ch2 {
+    display: none;
+  }
+  .ch3 {
+    display: none;
+  }
+  .ch4 {
+    display: none;
+  }
+}
+
+
+
+
+/*TRAIN DESIGN*/
+
+/* .container {
+  min-height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 5px 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 670px;
+
+  animation: mov 8s infinite;
+}
+p {
+  display: inline;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 123, 62);
+  font-weight: bold;
+}
+.p2 {
+  font-size: 1.7rem;
+  position: absolute;
+  left: 150px;
+  top: 27px;
+  color: rgb(35, 35, 255);
+}
+@keyframes mov {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(126%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 350px;
+
+    animation: mov1 6s infinite;
+  }
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .p1 {
+    position: absolute;
+    top: 0px;
+  }
+  .p2 {
+    font-size: 1.2rem;
+    left: 30px;
+    top: 35px;
+  }
+}
+@keyframes mov1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+/*animation line design*/
+
+.line {
+  height: 1.5px;
+  width: 0px;
+
+  background-color: white;
+  position: absolute;
+  top: 200px;
+
+  transition: 1s;
+}
+.line1 {
+  position: absolute;
+  left: 0;
+}
+.line2 {
+  position: absolute;
+  right: 0px;
+}
+
+/*first heading train design*/
+
+.train1 {
+  height: auto;
+  max-width: 1000px;
+  /* border: 2px solid red ; */
+  padding: 5px;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+  top: 50px;
+}
+.p111 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #001eff 0%, #60efff 50%, #ffee00 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+.p21 {
+  font-size: 2rem;
+  
+}
+
+@media (max-width: 600px) {
+  .train1 {
+    max-width: 300px;
+  }
+  .p111 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .p21 {
+    font-size: 1.2rem;
+  }
+}
+
+/*first 2 buttons design*/
+
+.btn {
+  position: absolute;
+  top: 75%;
+  padding: 10px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.boder {
+  border: 1.6px solid rgb(190, 190, 190);
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.b {
+  text-align: center;
+  padding: 4px 50px;
+  font-size: 1.6rem;
+  /* font-weight: ; */
+  font-family: Permanent Marker;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #ffb011;
+  /* background-color: rgb(255, 162, 0); */
+  transition: 0.5s;
+}
+.b:hover {
+  color: aqua;
+  /* font-size: 1.8rem; */
+  box-shadow: 0px 0px 20px 5px rgba(255, 234, 01, 1);
+  /* background-color: rgba(0, 0, 97, 0.944); */
+  background-color: rgba(1, 1, 133, 0.944);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.boder:hover {
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .b {
+    padding: 3px 20px;
+    font-size: 1.2rem;
+  }
+  .btn {
+    gap: 40px;
+  }
+}
+
+/*video design*/
+
+.video-div {
+  height: 450px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  /*align buttons*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vid1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*go back top button*/
+
+.fa-solid {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: transparent;
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fa-solid:hover {
+  color: rgba(0, 0, 137, 1);
+  box-shadow: 0px 0px 40px 10px rgb(0, 255, 255);
+  background-color: transparent;
+  border-radius: 500%;
+  transform: scale(1.1);
+}
+
+/*whatspp*/
+
+.fa-brands {
+  color: rgba(0, 255, 0, 1);
+  position: fixed;
+  right: 10px;
+  bottom: 160px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fa-brands:hover {
+  box-shadow: 0px 0px 40px 5px rgba(0, 255, 0, 1);
+  border-radius: 500%;
+  transform: scale(1.1);
+}
